@@ -52,7 +52,7 @@ noremap ,ri :action Maven.Reimport<CR>
 noremap ,ff :action ReformatCode<CR>
 noremap ,xm :action SearchEverywhere<CR>
 noremap ,ci :action CommentByLineComment<CR>
-noremap ,xs :action SaveAll<CR>
+noremap ,xs:action SaveAll<CR>
 noremap ,aa :action $Copy<CR>
 noremap ,zz :action $Paste<CR>
 noremap ,yy :action PasteMultiple<CR>
