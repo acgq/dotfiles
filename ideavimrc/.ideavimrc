@@ -37,7 +37,8 @@ vmap kj <Esc>
 nnoremap gd :action GotoDeclaration<CR>
 nnoremap gi :action GotoImplementation<CR>
 nnoremap gf :action GotoFile<CR>
-noremap <Leader>ga :action GotoAction<CR>
+nnoremap ga :action GotoAction<CR>
+nnoremap <Leader>ga :action GotoAction<CR>
 nnoremap <Leader>gc :action GotoClass<CR>
 nnoremap <Leader>gd :action GotoDeclaration<CR>
 nnoremap <Leader>gf :action GotoFile<CR>
@@ -52,7 +53,7 @@ noremap ,ri :action Maven.Reimport<CR>
 noremap ,ff :action ReformatCode<CR>
 noremap ,xm :action SearchEverywhere<CR>
 noremap ,ci :action CommentByLineComment<CR>
-noremap ,xs :action SaveAll<CR>
+noremap ,xs:action SaveAll<CR>
 noremap ,aa :action $Copy<CR>
 noremap ,zz :action $Paste<CR>
 noremap ,yy :action PasteMultiple<CR>
@@ -66,16 +67,10 @@ noremap ,ii :action GotoSymbol<CR>
 noremap <C-]> :action GotoImplementation<CR>
 noremap ,xz :action ActivateTerminalToolWindow<CR>
 " ideavim bug, they don't support numberic character in hotkey
-" should be ,x1
-noremap ,xu :action VimWindowOnly<CR>
+noremap ,xx :action SmartSelect<CR>
+noremap ,zz :action SmartUnSelect<CR>
 " should be ,x3
-noremap ,xh :action VimWindowSplitHorizontal<CR>
+noremap ,wv :action SplitHorizontally<CR>
 " should be ,x2
-noremap ,xv :action VimWindowSplitVertical<CR>
-" but ,x0 works!
-noremap ,x0 :action VimWindowClose<CR>
-" move window
-noremap ,wh :action VimWindowLeft<CR>
-noremap ,wl :action VimWindowRight<CR>
-noremap ,wj :action VimWindowDown<CR>
-noremap ,wk :action VimWindowUp<CR>
+noremap ,wh :action SplitVertically<CR>
+
