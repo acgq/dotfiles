@@ -38,6 +38,7 @@ nnoremap gd :action GotoDeclaration<CR>
 nnoremap gi :action GotoImplementation<CR>
 nnoremap gf :action GotoFile<CR>
 nnoremap ga :action GotoAction<CR>
+nnoremap gt :action GotoTest<CR>
 nnoremap <Leader>ga :action GotoAction<CR>
 nnoremap <Leader>gc :action GotoClass<CR>
 nnoremap <Leader>gd :action GotoDeclaration<CR>
@@ -66,11 +67,15 @@ noremap ,kk :action GotoFile<CR>
 noremap ,ii :action GotoSymbol<CR>
 noremap <C-]> :action GotoImplementation<CR>
 noremap ,xz :action ActivateTerminalToolWindow<CR>
-" ideavim bug, they don't support numberic character in hotkey
-noremap ,xx :action SmartSelect<CR>
-noremap ,zz :action SmartUnSelect<CR>
-" should be ,x3
-noremap ,wv :action SplitHorizontally<CR>
-" should be ,x2
-noremap ,wh :action SplitVertically<CR>
+
+noremap ,x1 <C-W>o
+noremap ,x2 :split<CR>
+noremap ,x3 :vsplit<CR>
+noremap ,x0 :q<CR>
+" move window
+noremap ,wh <C-W>h
+noremap ,wl <C-W>l
+noremap ,wj <C-W>j
+noremap ,wk <C-W>k
+noremap ,xx :action EditorSelectWord<CR>
 
