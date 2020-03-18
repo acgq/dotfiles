@@ -26,7 +26,8 @@ set hidden
 
 set fillchars+=stl:\ ,stlnc:\
 set laststatus=2
-set clipboard=unnamedplus  "X clipboard as unnamed
+"set clipboard=unnamedplus
+"X clipboard as unnamed
 
 "press kj to exit insert mode
 imap kj <Esc>
@@ -36,19 +37,21 @@ vmap kj <Esc>
 "@see https://youtrack.jetbrains.com/issue/VIM-510 on expand selected region. Press `Ctrl-W` and `Ctrl-Shift-W` to increase and decrease selected region
 nnoremap gd :action GotoDeclaration<CR>
 nnoremap gi :action GotoImplementation<CR>
-nnoremap gf :action GotoFile<CR>
 nnoremap ga :action GotoAction<CR>
 nnoremap gt :action GotoTest<CR>
 nnoremap <Leader>ga :action GotoAction<CR>
 nnoremap <Leader>gc :action GotoClass<CR>
 nnoremap <Leader>gd :action GotoDeclaration<CR>
-nnoremap <Leader>gf :action GotoFile<CR>
 nnoremap <Leader>gi :action GotoImplementation<CR>
 nnoremap <Leader>gs :action GotoSymbol<CR>
 nnoremap <Leader>gt :action GotoTest<CR>
 
+noremap ,jj :action Back<CR>
+noremap ,hh :action Forward<CR>
+
 nnoremap zC :action CollapseRegionRecursively<CR>
 nnoremap zO :action ExpandRegionRecursively<CR>
+
 
 noremap ,ri :action Maven.Reimport<CR>
 noremap ,ff :action ReformatCode<CR>
