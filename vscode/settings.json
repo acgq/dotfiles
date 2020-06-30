@@ -93,6 +93,10 @@
       "commands": ["workbench.action.files.openFile"]
     },
     {
+      "before": ["<leader>","c", "f"],
+      "commands": ["workbench.action.files.copyPathOfActiveFile"]
+    },
+    {
       "before": ["<leader>", "x", "k"],
       "commands": ["workbench.action.closeActiveEditor"]
     },
@@ -144,7 +148,6 @@
   "vim.handleKeys":{
     "<C-a>": false,
   },
-  "zenMode.centerLayout": false,
   "window.zoomLevel": 1,
   "editor.minimap.enabled": false,
   "search.exclude": {
@@ -155,11 +158,26 @@
     "**/npm-packages-offline-cache": true
   },
   "search.useGlobalIgnoreFiles": true,
-  "search.location": "panel",
   "workbench.activityBar.visible": false,
   "files.autoSave": "afterDelay",
   "workbench.colorTheme": "Solarized Dark",
   "workbench.statusBar.visible": true,
   "editor.renderWhitespace": "none",
-  "editor.renderControlCharacters": false
+  "editor.renderControlCharacters": false,
+  "zenMode.hideLineNumbers": false,
+  "zenMode.restore": true,
+  "zenMode.hideStatusBar": false,
+  "editor.suggestSelection": "first",
+  "vsintellicode.modify.editor.suggestSelection": "automaticallyOverrodeDefaultValue",
+  "files.exclude": {
+    "**/.classpath": true,
+    "**/.project": true,
+    "**/.settings": true,
+    "**/.factorypath": true
+  },
+  "java.semanticHighlighting.enabled": true,
+  "terminal.integrated.shell.windows": "C:\\Program Files\\Git\\bin\\bash.exe",
+  "[jsonc]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  }
 }

@@ -2,7 +2,7 @@
 [
   {
     "key": "F12",
-    "command": "workbench.action.togglePanel",
+    "command": "workbench.action.togglePanel"
   },
   {
     "key": "Ctrl+]",
@@ -15,5 +15,12 @@
   {
     "key": "Ctrl+F12",
     "command": "workbench.action.toggleMaximizedPanel"
+  },
+  { "key": "Ctrl+Alt+L", 
+    "command": "-editor.action.formatDocument" 
+  },
+  {
+    "key": "Alt+/",
+    "command": "editor.action.triggerSuggest"
   }
 ]
