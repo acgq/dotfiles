@@ -17,7 +17,7 @@
     "command": "workbench.action.toggleMaximizedPanel"
   },
   { "key": "Ctrl+Alt+L", 
-    "command": "-editor.action.formatDocument" 
+    "command": "editor.action.formatDocument" 
   },
   {
     "key": "Alt+/",
