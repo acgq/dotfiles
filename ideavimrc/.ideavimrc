@@ -1,4 +1,4 @@
-let mapleader = ","   " leader is comma
+let mapleader = ","   " lrader is comma
 let localleader = "," " leader is comma
 
 set tabstop=4       " number of visual spaces per TAB
@@ -26,8 +26,7 @@ set hidden
 
 set fillchars+=stl:\ ,stlnc:\
 set laststatus=2
-"set clipboard=unnamedplus
-"X clipboard as unnamed
+set clipboard=unnamedplus "X clipboard as unnamed
 
 "press kj to exit insert mode
 imap kj <Esc>
@@ -48,13 +47,14 @@ nnoremap <Leader>gt :action GotoTest<CR>
 
 noremap ,jj :action Back<CR>
 noremap ,hh :action Forward<CR>
+noremap ,sf :action FindInPath<CR>
 
 nnoremap zC :action CollapseRegionRecursively<CR>
 nnoremap zO :action ExpandRegionRecursively<CR>
 
 
+noremap ,ff :action ToggleZenMode<CR>
 noremap ,ri :action Maven.Reimport<CR>
-noremap ,ff :action ReformatCode<CR>
 noremap ,xm :action SearchEverywhere<CR>
 noremap ,ci :action CommentByLineComment<CR>
 noremap ,xs:action SaveAll<CR>
@@ -75,6 +75,11 @@ noremap ,x1 <C-W>o
 noremap ,x2 :split<CR>
 noremap ,x3 :vsplit<CR>
 noremap ,x0 :q<CR>
+noremap ,oo <C-W>o
+noremap ,sa :split<CR>
+noremap ,sd :vsplit<CR>
+noremap ,sq :q<CR>
+
 " move window
 noremap ,wh <C-W>h
 noremap ,wl <C-W>l

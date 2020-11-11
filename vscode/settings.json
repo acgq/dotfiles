@@ -1,3 +1,4 @@
+// this is custom settings
 {
   "vim.easymotion": true,
   "vim.sneak": true,
