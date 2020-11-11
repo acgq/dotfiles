@@ -6,6 +6,10 @@
   "vim.useSystemClipboard": true,
   "vim.useCtrlKeys": true,
   "vim.hlsearch": true,
+  "vim.autoSwitchInputMethod.enable": true,
+  "vim.autoSwitchInputMethod.defaultIM": "1033",
+  "vim.autoSwitchInputMethod.obtainIMCmd": "C:\\tools\\im-select.exe",
+  "vim.autoSwitchInputMethod.switchIMCmd": "C:\\tools\\im-select.exe {im}",
   "vim.insertModeKeyBindings": [
     {
       "before": ["k", "j"],
@@ -17,6 +21,14 @@
     {
       "before": ["<leader>", "x", "x"],
       "commands": ["editor.action.smartSelect.expand"]
+    },
+    {
+      "before": ["<leader>", "j", "j"],
+      "commands": ["workbench.action.navigateBack"]
+    },
+    {
+      "before": ["<leader>", "h", "h"],
+      "commands": ["workbench.action.navigateForward"]
     },
     {
       "before": ["<leader>", "z", "z"],
@@ -117,12 +129,12 @@
       "commands": ["workbench.action.editorLayoutSingle"]
     },
     {
-      "before": ["<leader>", "x", "3"],
-      "commands": ["workbench.action.splitEditorRight"]
-    },
-    {
       "before": ["<leader>", "x", "2"],
       "commands": ["workbench.action.splitEditorDown"]
+    },
+    {
+      "before": ["<leader>", "x", "3"],
+      "commands": ["workbench.action.splitEditorRight"]
     },
     {
       "before": ["<leader>", "x", "4"],
@@ -133,12 +145,44 @@
       "commands": ["workbench.action.closeGroup"]
     },
     {
+      "before": ["<leader>", "o", "o"],
+      "commands": ["workbench.action.editorLayoutSingle"]
+    },
+    {
+      "before": ["<leader>", "s", "d"],
+      "commands": ["workbench.action.splitEditorDown"]
+    },
+    {
+      "before": ["<leader>", "s", "d"],
+      "commands": ["workbench.action.splitEditorRight"]
+    },
+    {
+      "before": ["<leader>", "s", "f"],
+      "commands": ["workbench.action.findInFiles"]
+    },
+    {
       "before": ["<leader>", "x", "z"],
       "commands": ["workbench.action.terminal.focus"]
     },
     {
       "before": ["<leader>", "f", "f"],
       "commands": ["workbench.action.toggleZenMode"]
+    },
+    {
+      "before": ["<leader>", "w", "h"],
+      "after": ["<C-w>","h"]
+    },
+    {
+      "before": ["<leader>", "w", "j"],
+      "after": ["<C-w>","j"]
+    },
+    {
+      "before": ["<leader>", "w", "k"],
+      "after": ["<C-w>","k"]
+    },
+    {
+      "before": ["<leader>", "w", "l"],
+      "after": ["<C-w>","l"]
     },
     {
       "before": ["<leader>", "w", "q"],
@@ -160,7 +204,6 @@
   "search.useGlobalIgnoreFiles": true,
   "workbench.activityBar.visible": false,
   "files.autoSave": "afterDelay",
-  "workbench.colorTheme": "Solarized Dark",
   "workbench.statusBar.visible": true,
   "editor.renderWhitespace": "none",
   "editor.renderControlCharacters": false,
@@ -176,9 +219,39 @@
     "**/.factorypath": true
   },
   "java.semanticHighlighting.enabled": true,
-  "terminal.integrated.shell.windows": "C:\\Program Files\\Git\\bin\\bash.exe",
+  "terminal.integrated.shell.windows": "C:\\WINDOWS\\System32\\WindowsPowerShell\\v1.0\\powershell.exe",
   "[jsonc]": {
     "editor.defaultFormatter": "esbenp.prettier-vscode"
   },
-  "javascript.suggest.completeFunctionCalls": true
+  "[javascript]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "javascript.suggest.completeFunctionCalls": true,
+  "[html]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "liveServer.settings.donotShowInfoMsg": true,
+  "[json]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "vim.foldfix": true,
+  "vscodeGoogleTranslate.preferredLanguage": "Chinese (Simplified)",
+  "typescript.suggest.completeFunctionCalls": true,
+  "java.configuration.runtimes": [
+    {
+      "name": "JavaSE-1.8",
+      "path": "C:/Program Files/Java/jdk1.8.0_231",
+      "default": true
+    },
+    {
+      "name": "JavaSE-11",
+      "path": "C:/Program Files/Java/jdk-11.0.3"
+    },
+    {
+      "name": "JavaSE-14",
+      "path": "C:/Program Files/Java/jdk-14.0.1"
+    }
+  ],
+  "editor.fontFamily": " Consolas,思源黑体, 'Courier New', monospace",
+  "workbench.colorTheme": "Complete Dark"
 }
