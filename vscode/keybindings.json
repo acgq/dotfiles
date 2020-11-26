@@ -84,5 +84,17 @@
     "key": "f9",
     "command": "-editor.debug.action.toggleBreakpoint",
     "when": "editorTextFocus"
+  },
+  {
+    "key": "ctrl+shift+f10",
+    "command": "code-runner.run"
+  },
+  {
+    "key": "ctrl+alt+n",
+    "command": "-code-runner.run"
+  },
+  {
+    "key": "ctrl+shift+f9",
+    "command": "C_Cpp.BuildAndDebugActiveFile"
   }
 ]

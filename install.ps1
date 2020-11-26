@@ -34,4 +34,10 @@ if (!(Test-Path $env:USERPROFILE\.ideavimrc)) {
     echo "==> $env:USERPROFILE\.ideavimrc has exists"
 }
 
+if (!(Test-Path $HOME\AppData\Local\nvim)) {
+    echo "==> Trying to set nvim settings "
+    cmd /c mklink /D  $HOME\AppData\Local\nvim .\nvim
+} else {
+    echo "==> $HOME\AppData\Local\nvim has exists"
+}
 Pause

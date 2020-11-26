@@ -7,10 +7,10 @@
   "vim.useSystemClipboard": true,
   "vim.useCtrlKeys": true,
   "vim.hlsearch": true,
-  "vim.autoSwitchInputMethod.enable": true,
-  "vim.autoSwitchInputMethod.defaultIM": "1033",
-  "vim.autoSwitchInputMethod.obtainIMCmd": "C:\\tools\\im-select.exe",
-  "vim.autoSwitchInputMethod.switchIMCmd": "C:\\tools\\im-select.exe {im}",
+  // "vim.autoSwitchInputMethod.enable": true,
+  // "vim.autoSwitchInputMethod.defaultIM": "1033",
+  // "vim.autoSwitchInputMethod.obtainIMCmd": "C:\\tools\\im-select.exe",
+  // "vim.autoSwitchInputMethod.switchIMCmd": "C:\\tools\\im-select.exe {im}",
   "vim.insertModeKeyBindings": [
     {
       "before": ["k", "j"],
@@ -53,6 +53,10 @@
     }
   ],
   "vim.normalModeKeyBindingsNonRecursive": [
+    {
+      "before": ["<leader>", "r", "v"],
+      "commands": ["editor.action.rename"]
+    },
     {
       "before": ["<leader>", "x", "x"],
       "commands": ["editor.action.smartSelect.expand"]
@@ -203,7 +207,7 @@
     "**/npm-packages-offline-cache": true
   },
   "search.useGlobalIgnoreFiles": true,
-  "workbench.activityBar.visible": false,
+  "workbench.activityBar.visible": true,
   "files.autoSave": "afterDelay",
   "workbench.statusBar.visible": true,
   "editor.renderWhitespace": "none",
@@ -254,5 +258,14 @@
     }
   ],
   "editor.fontFamily": " Consolas,思源黑体, 'Courier New', monospace",
-  "workbench.colorTheme": "Complete Dark"
+  "workbench.colorTheme": "Complete Dark",
+  "leetcode.endpoint": "leetcode-cn",
+  "markdown.preview.breaks": true,
+  "leetcode.hint.configWebviewMarkdown": false,
+  "leetcode.workspaceFolder": "C:\\Users\\chen\\.leetcode",
+  "[java]": {
+    "editor.defaultFormatter": "redhat.java"
+  },
+  "leetcode.hint.commandShortcut": false,
+  "leetcode.hint.commentDescription": false
 }
