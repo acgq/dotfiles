@@ -49,6 +49,9 @@ noremap ,jj :action Back<CR>
 noremap ,hh :action Forward<CR>
 noremap ,sf :action FindInPath<CR>
 
+" disable search highlight
+noremap <C-n> :nohl<CR>
+
 nnoremap zC :action CollapseRegionRecursively<CR>
 nnoremap zO :action ExpandRegionRecursively<CR>
 

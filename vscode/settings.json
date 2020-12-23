@@ -7,9 +7,11 @@
   "vim.useSystemClipboard": true,
   "vim.useCtrlKeys": true,
   "vim.hlsearch": true,
+  "vim.enableNeovim": true,
+  // "vim.neovimPath": "C:\\tools\\neovim\\Neovim\\bin",
   // "vim.autoSwitchInputMethod.enable": true,
   // "vim.autoSwitchInputMethod.defaultIM": "1033",
-  // "vim.autoSwitchInputMethod.obtainIMCmd": "C:\\tools\\im-select.exe",
+  // "vim.autoSwitchInputMethod.obtainIMCmd": "C:\\tools\\im-select.exe", 
   // "vim.autoSwitchInputMethod.switchIMCmd": "C:\\tools\\im-select.exe {im}",
   "vim.insertModeKeyBindings": [
     {
@@ -19,6 +21,10 @@
   ],
   "vim.leader": ",",
   "vim.visualModeKeyBindingsNonRecursive": [
+    {
+      "before": ["<C-n>"],
+      "commands": [":nohl"]
+    },
     {
       "before": ["<leader>", "x", "x"],
       "commands": ["editor.action.smartSelect.expand"]
@@ -175,19 +181,19 @@
     },
     {
       "before": ["<leader>", "w", "h"],
-      "after": ["<C-w>","h"]
+      "after": ["<C-w>", "h"]
     },
     {
       "before": ["<leader>", "w", "j"],
-      "after": ["<C-w>","j"]
+      "after": ["<C-w>", "j"]
     },
     {
       "before": ["<leader>", "w", "k"],
-      "after": ["<C-w>","k"]
+      "after": ["<C-w>", "k"]
     },
     {
       "before": ["<leader>", "w", "l"],
-      "after": ["<C-w>","l"]
+      "after": ["<C-w>", "l"]
     },
     {
       "before": ["<leader>", "w", "q"],
@@ -207,7 +213,7 @@
     "**/npm-packages-offline-cache": true
   },
   "search.useGlobalIgnoreFiles": true,
-  "workbench.activityBar.visible": true,
+  "workbench.activityBar.visible": false,
   "files.autoSave": "afterDelay",
   "workbench.statusBar.visible": true,
   "editor.renderWhitespace": "none",
@@ -258,7 +264,7 @@
     }
   ],
   "editor.fontFamily": " Consolas,思源黑体, 'Courier New', monospace",
-  "workbench.colorTheme": "Complete Dark",
+  "workbench.colorTheme": "Dracula",
   "leetcode.endpoint": "leetcode-cn",
   "markdown.preview.breaks": true,
   "leetcode.hint.configWebviewMarkdown": false,
@@ -267,5 +273,7 @@
     "editor.defaultFormatter": "redhat.java"
   },
   "leetcode.hint.commandShortcut": false,
-  "leetcode.hint.commentDescription": false
+  "leetcode.hint.commentDescription": false,
+  "java.jdt.ls.vmargs": "-XX:+UseParallelGC -XX:GCTimeRatio=4 -XX:AdaptiveSizePolicyWeight=90 -Dsun.zip.disableMemoryMapping=true -Xmx1G -Xms100m -javaagent:\"c:\\Users\\chen\\.vscode\\extensions\\gabrielbb.vscode-lombok-1.0.1\\server\\lombok.jar\"",
+  "python.autoComplete.addBrackets": true
 }

@@ -1,0 +1,7 @@
+let g:netrw_dirhistmax  =10
+let g:netrw_dirhistcnt =5
+let g:netrw_dirhist_5='C:/Users/chen/.emacs.d'
+let g:netrw_dirhist_4='C:\Users\chen\.emacs.d/emms'
+let g:netrw_dirhist_3='C:\Users\chen\.config\git'
+let g:netrw_dirhist_2='D:/CompanyCode/SinoP-Biz'
+let g:netrw_dirhist_1='D:\CompanyCode\SinoP-Biz'
