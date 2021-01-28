@@ -86,7 +86,7 @@
     "when": "editorTextFocus"
   },
   {
-    "key": "ctrl+shift+f10",
+    "key": "alt+f10",
     "command": "code-runner.run"
   },
   {

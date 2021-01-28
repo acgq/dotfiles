@@ -30,12 +30,16 @@ set clipboard=unnamedplus "X clipboard as unnamed
 
 "press kj to exit insert mode
 imap kj <Esc>
+
+imap <C-v> :action $Paste<CR>
+imap <C-V> :action $Paste<CR>
 vmap kj <Esc>
 
 " import
 "@see https://youtrack.jetbrains.com/issue/VIM-510 on expand selected region. Press `Ctrl-W` and `Ctrl-Shift-W` to increase and decrease selected region
 nnoremap gd :action GotoDeclaration<CR>
 nnoremap gi :action GotoImplementation<CR>
+nnoremap gs :action GotoSuperMethod<CR>
 nnoremap ga :action GotoAction<CR>
 nnoremap gt :action GotoTest<CR>
 nnoremap <Leader>ga :action GotoAction<CR>
@@ -46,6 +50,7 @@ nnoremap <Leader>gs :action GotoSymbol<CR>
 nnoremap <Leader>gt :action GotoTest<CR>
 
 noremap ,jj :action Back<CR>
+noremap ,nn :action Back<CR>
 noremap ,hh :action Forward<CR>
 noremap ,sf :action FindInPath<CR>
 
@@ -74,6 +79,7 @@ noremap ,ii :action GotoSymbol<CR>
 noremap <C-]> :action GotoImplementation<CR>
 noremap ,xz :action ActivateTerminalToolWindow<CR>
 
+
 noremap ,x1 <C-W>o
 noremap ,x2 :split<CR>
 noremap ,x3 :vsplit<CR>
@@ -90,3 +96,5 @@ noremap ,wj <C-W>j
 noremap ,wk <C-W>k
 noremap ,xx :action EditorSelectWord<CR>
 
+" for clion
+noremap ,rl :action CMake.ReloadCMakeProject<CR>

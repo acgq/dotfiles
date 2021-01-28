@@ -7,11 +7,11 @@
   "vim.useSystemClipboard": true,
   "vim.useCtrlKeys": true,
   "vim.hlsearch": true,
-  "vim.enableNeovim": true,
+  // "vim.enableNeovim": true,
   // "vim.neovimPath": "C:\\tools\\neovim\\Neovim\\bin",
   // "vim.autoSwitchInputMethod.enable": true,
   // "vim.autoSwitchInputMethod.defaultIM": "1033",
-  // "vim.autoSwitchInputMethod.obtainIMCmd": "C:\\tools\\im-select.exe", 
+  // "vim.autoSwitchInputMethod.obtainIMCmd": "C:\\tools\\im-select.exe",
   // "vim.autoSwitchInputMethod.switchIMCmd": "C:\\tools\\im-select.exe {im}",
   "vim.insertModeKeyBindings": [
     {
@@ -29,14 +29,7 @@
       "before": ["<leader>", "x", "x"],
       "commands": ["editor.action.smartSelect.expand"]
     },
-    {
-      "before": ["<leader>", "j", "j"],
-      "commands": ["workbench.action.navigateBack"]
-    },
-    {
-      "before": ["<leader>", "h", "h"],
-      "commands": ["workbench.action.navigateForward"]
-    },
+
     {
       "before": ["<leader>", "z", "z"],
       "commands": ["editor.action.smartSelect.shrink"]
@@ -62,6 +55,14 @@
     {
       "before": ["<leader>", "r", "v"],
       "commands": ["editor.action.rename"]
+    },
+    {
+      "before": ["<leader>", "j", "j"],
+      "commands": ["workbench.action.navigateBack"]
+    },
+    {
+      "before": ["<leader>", "h", "h"],
+      "commands": ["workbench.action.navigateForward"]
     },
     {
       "before": ["<leader>", "x", "x"],
@@ -160,7 +161,7 @@
       "commands": ["workbench.action.editorLayoutSingle"]
     },
     {
-      "before": ["<leader>", "s", "d"],
+      "before": ["<leader>", "s", "a"],
       "commands": ["workbench.action.splitEditorDown"]
     },
     {
@@ -213,7 +214,7 @@
     "**/npm-packages-offline-cache": true
   },
   "search.useGlobalIgnoreFiles": true,
-  "workbench.activityBar.visible": false,
+  "workbench.activityBar.visible": true,
   "files.autoSave": "afterDelay",
   "workbench.statusBar.visible": true,
   "editor.renderWhitespace": "none",
@@ -237,7 +238,6 @@
   "[javascript]": {
     "editor.defaultFormatter": "esbenp.prettier-vscode"
   },
-  "javascript.suggest.completeFunctionCalls": true,
   "[html]": {
     "editor.defaultFormatter": "esbenp.prettier-vscode"
   },
@@ -275,5 +275,7 @@
   "leetcode.hint.commandShortcut": false,
   "leetcode.hint.commentDescription": false,
   "java.jdt.ls.vmargs": "-XX:+UseParallelGC -XX:GCTimeRatio=4 -XX:AdaptiveSizePolicyWeight=90 -Dsun.zip.disableMemoryMapping=true -Xmx1G -Xms100m -javaagent:\"c:\\Users\\chen\\.vscode\\extensions\\gabrielbb.vscode-lombok-1.0.1\\server\\lombok.jar\"",
-  "python.autoComplete.addBrackets": true
+  "python.autoComplete.addBrackets": true,
+  "javascript.suggest.completeFunctionCalls": true,
+  "settingsSync.ignoredExtensions": ["visualstudioexptteam.vscodeintellicode"]
 }
