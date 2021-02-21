@@ -30,9 +30,9 @@ set clipboard=unnamedplus "X clipboard as unnamed
 
 "press kj to exit insert mode
 imap kj <Esc>
+"map C-v to paste in insert mode
+imap <C-v> <C-r>+
 
-imap <C-v> :action $Paste<CR>
-imap <C-V> :action $Paste<CR>
 vmap kj <Esc>
 
 " import
