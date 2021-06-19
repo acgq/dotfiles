@@ -48,8 +48,6 @@ set statusline+=%c      "cursor column
 set statusline+=\ %P    "percent through file
 "}
 
-"Restore cursor to file position in previous editing session
-
 
 " set leader to ,
 let mapleader = "," " Leader is the ',' key
@@ -117,6 +115,7 @@ noremap ,wl <C-W>l
 nmap ,tr :%s/ \+$//g<CR>
 nmap ,cg :CtrlPRoot<CR>
 nmap ,xc :suspend<CR>
+nmap <C-n> :nohl<CR>
 
 
 " Copy/Paste, can only handle lines
@@ -169,10 +168,7 @@ if has("patch-8.1.360") || has("nvim-0.3.5")
   set diffopt+=indent-heuristic
 endif
 
-" {{ vim-expand-region
-vmap v <Plug>(expand_region_expand)
-" }}
-"
+
 " Local Variables:
 " coding: utf-8
 " indent-tabs-mode: nil
@@ -188,5 +184,14 @@ Plug 'iCyMind/NeoSolarized'
 Plug 'junegunn/fzf', { 'do': { -> fzf#install() } }
 Plug 'vim-airline/vim-airline'
 Plug 'vim-airline/vim-airline-themes'
+" On-demand loading
+Plug 'scrooloose/nerdtree', { 'on':  'NERDTreeToggle' }
+Plug 'neoclide/coc.nvim', {'branch': 'release'}
 call plug#end()
 
+" custom command
+command! LS call fzf#run(fzf#wrap({'source': 'ls'}))
+"many terminal treat Alt as Esc, the real map is Alt+1
+nnoremap <Esc>1 :NERDTreeToggle<CR>
+nnoremap <A-1> :NERDTreeToggle<CR>
+nnoremap <leader>v :NERDTreeFind<CR>

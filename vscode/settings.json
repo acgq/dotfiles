@@ -204,7 +204,6 @@
   "vim.handleKeys": {
     "<C-a>": false
   },
-  "window.zoomLevel": 1,
   "editor.minimap.enabled": false,
   "search.exclude": {
     "**/.git": true,
@@ -214,7 +213,6 @@
     "**/npm-packages-offline-cache": true
   },
   "search.useGlobalIgnoreFiles": true,
-  "workbench.activityBar.visible": true,
   "files.autoSave": "afterDelay",
   "workbench.statusBar.visible": true,
   "editor.renderWhitespace": "none",
@@ -236,7 +234,7 @@
     "editor.defaultFormatter": "esbenp.prettier-vscode"
   },
   "[javascript]": {
-    "editor.defaultFormatter": "esbenp.prettier-vscode"
+    "editor.defaultFormatter": "vscode.typescript-language-features"
   },
   "[html]": {
     "editor.defaultFormatter": "esbenp.prettier-vscode"
@@ -277,5 +275,11 @@
   "java.jdt.ls.vmargs": "-XX:+UseParallelGC -XX:GCTimeRatio=4 -XX:AdaptiveSizePolicyWeight=90 -Dsun.zip.disableMemoryMapping=true -Xmx1G -Xms100m -javaagent:\"c:\\Users\\chen\\.vscode\\extensions\\gabrielbb.vscode-lombok-1.0.1\\server\\lombok.jar\"",
   "python.autoComplete.addBrackets": true,
   "javascript.suggest.completeFunctionCalls": true,
-  "settingsSync.ignoredExtensions": ["visualstudioexptteam.vscodeintellicode"]
+  "settingsSync.ignoredExtensions": [
+    "visualstudioexptteam.vscodeintellicode"
+  ],
+  "python.languageServer": "Pylance",
+  "python.analysis.completeFunctionParens": true,
+  "window.zoomLevel": 1,
+  "workbench.activityBar.visible": false
 }

@@ -28,12 +28,17 @@ set fillchars+=stl:\ ,stlnc:\
 set laststatus=2
 set clipboard=unnamedplus "X clipboard as unnamed
 
+set NERDTree
+
 "press kj to exit insert mode
 imap kj <Esc>
 "map C-v to paste in insert mode
 imap <C-v> <C-r>+
 
 vmap kj <Esc>
+
+
+
 
 " import
 "@see https://youtrack.jetbrains.com/issue/VIM-510 on expand selected region. Press `Ctrl-W` and `Ctrl-Shift-W` to increase and decrease selected region
@@ -49,8 +54,10 @@ nnoremap <Leader>gi :action GotoImplementation<CR>
 nnoremap <Leader>gs :action GotoSymbol<CR>
 nnoremap <Leader>gt :action GotoTest<CR>
 
+"
+noremap ,nn :action VcsShowNextChangeMarker<CR>
+noremap ,mm :action VcsShowPrevChangeMarker<CR>
 noremap ,jj :action Back<CR>
-noremap ,nn :action Back<CR>
 noremap ,hh :action Forward<CR>
 noremap ,sf :action FindInPath<CR>
 
@@ -98,3 +105,10 @@ noremap ,xx :action EditorSelectWord<CR>
 
 " for clion
 noremap ,rl :action CMake.ReloadCMakeProject<CR>
+   " for clojure
+noremap ,re :action :cursive.repl.actions/jump-to-repl<CR>
+noremap ,ee :action :cursive.repl.actions/run-top-sexp<CR>
+noremap <C-Right> :action :cursive.actions.paredit/slurp-forwards<CR>
+noremap <C-Left> :action :cursive.actions.paredit/barf-forwards<CR>
+"imap <C-Right> <Action>(:cursive.actions.paredit/slurp-forwards)
+"map <C-Left> :action :cursive.actions.paredit/barf-forwards<CR>
