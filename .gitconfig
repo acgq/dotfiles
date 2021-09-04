@@ -1,0 +1,49 @@
+[user]
+	name = acgq
+	email = chen330021@live.com
+[http]
+	proxy = http://127.0.0.1:1081
+[core]
+	autocrlf = true
+	excludesFile = ~/.gitignore
+	quotepath = false
+[alias]
+	st = status
+	ck = checkout
+	sh = stash
+        a = add 
+        b = branch
+        c = commit
+        br = branch -r
+        ca = commit --amend
+        d = diff
+        da = diff --name-only --diff-filter=U #conflicts
+        dw = diff --color-words
+        dc = diff --cached
+        pick = cherry-pick
+        who = shortlog -sn
+        l = log --pretty=format:'%C(yellow)%h%Creset%C(green)%d%Creset %ad %s %Cred(%an)%Creset' --date=short --decorate --graph
+        ls= log --pretty=format:'%h %s (%an)' --date=short # simple log for clipboard
+	lg = log --color --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset' --abbrev-commit --
+        back = reset --soft HEAD^ # undo the previous commit
+        fetus = !git fetch && git branch -v -a
+
+        tree = log --graph --oneline --all
+[gui]
+	encoding = utf-8
+[i18n "commit"]
+	encoding = utf-8
+[i18n]
+	logoutputencoding = utf-8
+[merge]
+    tool = intellij
+[mergetool "intellij"]
+    cmd = cmd.exe //c "\"idea\" merge \"$LOCAL\" \"$REMOTE\" \"$BASE\" \"$MERGED\""
+    trustExitCode = true
+    keepBackup = false
+[diff]
+    tool = vimdiff
+   # tool = intellij
+[difftool "intellij"]
+    cmd = cmd.exe //c "\"idea\" diff \"$LOCAL\" \"$REMOTE\""
+

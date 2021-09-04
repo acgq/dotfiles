@@ -28,7 +28,7 @@ if (!(Test-Path $env:APPDATA\Code\User\settings.json)) {
 }
 
 if (!(Test-Path $env:USERPROFILE\.ideavimrc)) {
-    echo "==> Trying to set vscode settings "
+    echo "==> Trying to set idea vim  settings "
     cmd /c mklink /H  $env:USERPROFILE\.ideavimrc .\ideavimrc\.ideavimrc
 } else {
     echo "==> $env:USERPROFILE\.ideavimrc has exists"
@@ -39,5 +39,12 @@ if (!(Test-Path $HOME\AppData\Local\nvim)) {
     cmd /c mklink /D  $HOME\AppData\Local\nvim .\nvim
 } else {
     echo "==> $HOME\AppData\Local\nvim has exists"
+}
+
+if (!(Test-Path $env:USERPROFILE\.ideavimrc)) {
+    echo "==> Trying to set vim settings "
+    cmd /c mklink /H  $env:USERPROFILE\.vimrc .\.vimrc
+} else {
+    echo "==> $env:USERPROFILE\.vimrc has exists"
 }
 Pause

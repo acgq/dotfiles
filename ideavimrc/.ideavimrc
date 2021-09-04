@@ -105,10 +105,11 @@ noremap ,xx :action EditorSelectWord<CR>
 
 " for clion
 noremap ,rl :action CMake.ReloadCMakeProject<CR>
-   " for clojure
+" for clojure
 noremap ,re :action :cursive.repl.actions/jump-to-repl<CR>
 noremap ,ee :action :cursive.repl.actions/run-top-sexp<CR>
 noremap <C-Right> :action :cursive.actions.paredit/slurp-forwards<CR>
 noremap <C-Left> :action :cursive.actions.paredit/barf-forwards<CR>
 "imap <C-Right> <Action>(:cursive.actions.paredit/slurp-forwards)
 "map <C-Left> :action :cursive.actions.paredit/barf-forwards<CR>
+
