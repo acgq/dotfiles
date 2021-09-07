@@ -2,9 +2,9 @@
 	name = acgq
 	email = chen330021@live.com
 [http]
-	proxy = http://127.0.0.1:1081
+	proxy = http://127.0.0.1:7890
 [core]
-	autocrlf = true
+	autocrlf = false
 	excludesFile = ~/.gitignore
 	quotepath = false
 [alias]
