@@ -68,6 +68,7 @@ nnoremap zC :action CollapseRegionRecursively<CR>
 nnoremap zO :action ExpandRegionRecursively<CR>
 
 
+noremap ,vv :action :Tools_gvim<CR>
 noremap ,ff :action ToggleZenMode<CR>
 noremap ,ri :action Maven.Reimport<CR>
 noremap ,xm :action SearchEverywhere<CR>
