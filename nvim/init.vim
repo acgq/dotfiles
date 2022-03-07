@@ -180,6 +180,7 @@ call plug#begin('~/AppData/Local/nvim/plugged')
 " below are some vim plugins for demonstration purpose.
 " add the plugin you want to use here.
 Plug 'joshdick/onedark.vim'
+Plug 'tmhedberg/matchit'
 Plug 'iCyMind/NeoSolarized'
 Plug 'junegunn/fzf', { 'do': { -> fzf#install() } }
 Plug 'vim-airline/vim-airline'

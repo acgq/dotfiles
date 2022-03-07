@@ -57,9 +57,11 @@ nnoremap <Leader>gt :action GotoTest<CR>
 "
 noremap ,nn :action VcsShowNextChangeMarker<CR>
 noremap ,mm :action VcsShowPrevChangeMarker<CR>
-noremap ,jj :action Back<CR>
-noremap ,hh :action Forward<CR>
 noremap ,sf :action FindInPath<CR>
+
+" :action Back not work as excepted ,see https://youtrack.jetbrains.com/issue/VIM-2225, use `nmap <C-o> <Action>(Back)` work normally
+nmap <C-o> <Action>(Back)
+nmap <C-i> <Action>(Forward)
 
 " disable search highlight
 noremap <C-n> :nohl<CR>
